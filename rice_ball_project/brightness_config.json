@@ -1,0 +1,582 @@
+{
+  "meta": {
+    "set_standard_source": "file",
+    "set_standard_image_path": "D:\\Test\\rice_ball_object\\cal_z Light API\\LightingImg\\Lv100.jpg"
+  },
+  "standard_brightness": 58.039215087890625,
+  "method": "lab_median",
+  "updated_at": "2025-09-26T10:20:53",
+  "best_pwm": 127,
+  "best_brightness": 57.806785583496094,
+  "pwm_bounds": [
+    0,
+    255
+  ],
+  "tolerance": 0.5,
+  "history": [
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 58.444210052490234
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 58.444210052490234
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 32.146217346191406
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 32.71881103515625
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 32.74103927612305
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 33.17477035522461
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 32.375526428222656
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 32.31861114501953
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 32.7269401550293
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 32.34212875366211
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 33.247684478759766
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 32.275123596191406
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 32.374114990234375
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 32.403133392333984
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 33.284446716308594
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 32.34569549560547
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 32.77494812011719
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 33.28924560546875
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 32.37220001220703
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 32.38986587524414
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 32.469417572021484
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 33.269447326660156
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 32.28470230102539
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 32.995941162109375
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 32.38661193847656
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 33.20595932006836
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 3.3004772663116455
+    },
+    {
+      "iter": 4,
+      "pwm": 47,
+      "brightness": 63.3458366394043
+    },
+    {
+      "iter": 5,
+      "pwm": 39,
+      "brightness": 64.0467300415039
+    },
+    {
+      "iter": 6,
+      "pwm": 35,
+      "brightness": 63.90913772583008
+    },
+    {
+      "iter": 7,
+      "pwm": 33,
+      "brightness": 65.05817413330078
+    },
+    {
+      "iter": 8,
+      "pwm": 32,
+      "brightness": 93.14844512939453
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 54.563568115234375
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 47.047576904296875
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 47.33890151977539
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 27.54148292541504
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 60.37174987792969
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 31.963111877441406
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 54.01029968261719
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 73.73700714111328
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 55.217506408691406,
+      "image_path": "brightness_captures\\iter01_pwm127_L55.22_20250827_130902_195.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 36.707889556884766,
+      "image_path": "brightness_captures\\iter02_pwm63_L36.71_20250827_130904_884.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 36.180580139160156,
+      "image_path": "brightness_captures\\iter03_pwm31_L36.18_20250827_130906_981.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 36.98124694824219,
+      "image_path": "brightness_captures\\iter04_pwm15_L36.98_20250827_130909_063.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 36.52802658081055,
+      "image_path": "brightness_captures\\iter05_pwm7_L36.53_20250827_130911_394.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 36.48814392089844,
+      "image_path": "brightness_captures\\iter06_pwm3_L36.49_20250827_130913_999.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 36.47090530395508,
+      "image_path": "brightness_captures\\iter07_pwm1_L36.47_20250827_130916_535.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 38.471839904785156,
+      "image_path": "brightness_captures\\iter08_pwm0_L38.47_20250827_130920_113.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 34.971981048583984,
+      "image_path": "brightness_captures\\iter01_pwm127_L34.97_20250827_130951_585.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 37.19749069213867,
+      "image_path": "brightness_captures\\iter02_pwm63_L37.20_20250827_130953_817.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 35.55997085571289,
+      "image_path": "brightness_captures\\iter03_pwm31_L35.56_20250827_130956_053.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 34.41767883300781,
+      "image_path": "brightness_captures\\iter04_pwm15_L34.42_20250827_130958_325.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 36.690696716308594,
+      "image_path": "brightness_captures\\iter05_pwm7_L36.69_20250827_131000_569.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 58.19740295410156,
+      "image_path": "brightness_captures\\iter06_pwm3_L58.20_20250827_131010_139.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 36.8930778503418,
+      "image_path": "brightness_captures\\iter07_pwm1_L36.89_20250827_131012_092.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 36.7035026550293,
+      "image_path": "brightness_captures\\iter08_pwm0_L36.70_20250827_131014_027.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 41.3431282043457,
+      "image_path": "brightness_captures\\iter01_pwm127_L41.34_20250827_131120_074.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 40.19538116455078,
+      "image_path": "brightness_captures\\iter02_pwm63_L40.20_20250827_131122_030.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 45.695960998535156,
+      "image_path": "brightness_captures\\iter03_pwm31_L45.70_20250827_131123_970.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 51.724769592285156,
+      "image_path": "brightness_captures\\iter04_pwm15_L51.72_20250827_131125_900.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 48.0488395690918,
+      "image_path": "brightness_captures\\iter05_pwm7_L48.05_20250827_131127_853.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 28.700374603271484,
+      "image_path": "brightness_captures\\iter06_pwm3_L28.70_20250827_131129_800.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 23.667970657348633,
+      "image_path": "brightness_captures\\iter07_pwm1_L23.67_20250827_131131_737.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 21.746761322021484,
+      "image_path": "brightness_captures\\iter08_pwm0_L21.75_20250827_131133_660.jpg",
+      "roi_path": null
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 26.803586959838867,
+      "image_path": "brightness_captures\\iter01.jpg",
+      "roi_path": "brightness_captures\\iter01_pwm127_L26.80_20250827_133032_536_roi.jpg"
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 26.87700843811035,
+      "image_path": "brightness_captures\\iter01.jpg",
+      "roi_path": "brightness_captures\\iter01_pwm127_L26.88_20250827_133038_560_roi.jpg"
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 36.43428421020508,
+      "image_path": "brightness_captures\\iter01.jpg",
+      "roi_path": "brightness_captures\\iter01_pwm127_L36.43_20250827_133043_468_roi.jpg"
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 36.087806701660156,
+      "image_path": "brightness_captures\\iter02.jpg",
+      "roi_path": "brightness_captures\\iter02_pwm63_L36.09_20250827_133045_291_roi.jpg"
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 50.44517517089844,
+      "image_path": "brightness_captures\\iter03.jpg",
+      "roi_path": "brightness_captures\\iter03_pwm31_L50.45_20250827_133047_104_roi.jpg"
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 26.666133880615234,
+      "image_path": "brightness_captures\\iter04.jpg",
+      "roi_path": "brightness_captures\\iter04_pwm15_L26.67_20250827_133048_930_roi.jpg"
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 37.03693389892578,
+      "image_path": "brightness_captures\\iter01.jpg",
+      "roi_path": "brightness_captures\\iter01_pwm127_L37.04_20250827_151635_668_roi.jpg"
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 37.26740264892578,
+      "image_path": "brightness_captures\\iter02.jpg",
+      "roi_path": "brightness_captures\\iter02_pwm63_L37.27_20250827_151637_664_roi.jpg"
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 37.47197341918945,
+      "image_path": "brightness_captures\\iter03.jpg",
+      "roi_path": "brightness_captures\\iter03_pwm31_L37.47_20250827_151640_308_roi.jpg"
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 39.06018829345703,
+      "image_path": "brightness_captures\\iter04.jpg",
+      "roi_path": "brightness_captures\\iter04_pwm15_L39.06_20250827_151642_580_roi.jpg"
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 37.284183502197266,
+      "image_path": "brightness_captures\\iter05.jpg",
+      "roi_path": "brightness_captures\\iter05_pwm7_L37.28_20250827_151644_633_roi.jpg"
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 37.174346923828125,
+      "image_path": "brightness_captures\\iter06.jpg",
+      "roi_path": "brightness_captures\\iter06_pwm3_L37.17_20250827_151646_590_roi.jpg"
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 37.73344421386719,
+      "image_path": "brightness_captures\\iter07.jpg",
+      "roi_path": "brightness_captures\\iter07_pwm1_L37.73_20250827_151648_513_roi.jpg"
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 51.02275848388672,
+      "image_path": "brightness_captures\\iter08.jpg",
+      "roi_path": "brightness_captures\\iter08_pwm0_L51.02_20250827_151650_469_roi.jpg"
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 37.46842956542969,
+      "image_path": "brightness_captures\\iter01.jpg",
+      "roi_path": "brightness_captures\\iter01_pwm127_L37.47_20250827_151743_394_roi.jpg"
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 34.543678283691406,
+      "image_path": "brightness_captures\\iter01.jpg",
+      "roi_path": "brightness_captures\\iter01_pwm127_L34.54_20250827_151749_909_roi.jpg"
+    },
+    {
+      "iter": 2,
+      "pwm": 191,
+      "brightness": 37.15241622924805,
+      "image_path": "brightness_captures\\iter02.jpg",
+      "roi_path": "brightness_captures\\iter02_pwm191_L37.15_20250827_151751_735_roi.jpg"
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 32.291046142578125,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 56.191158294677734,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 32.47416687011719,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 1,
+      "pwm": 127,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 2,
+      "pwm": 63,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 3,
+      "pwm": 31,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 4,
+      "pwm": 15,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 5,
+      "pwm": 7,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 6,
+      "pwm": 3,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 7,
+      "pwm": 1,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    },
+    {
+      "iter": 8,
+      "pwm": 0,
+      "brightness": 57.806785583496094,
+      "image_path": null,
+      "roi_path": null
+    }
+  ]
+}

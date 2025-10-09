@@ -1,0 +1,24 @@
+{
+  "Z0": 294.81,
+  "updated_at": 1756264280,
+  "meta": {
+    "z_offset_mm": 0.0,
+    "image_path": "D:\\Test\\rice_ball_object\\cal_z Light API\\1.jpg",
+    "focal_length_pixel": 960.0,
+    "real_diagonal_mm": 49.497,
+    "real_dot_length_mm": 35.0,
+    "method": "pinhole_avg(diagonal,side)",
+    "select_mode": "first4",
+    "blob": {
+      "filterByColor": true,
+      "blobColor": 255,
+      "filterByArea": true,
+      "minArea": 50,
+      "maxArea": 2000,
+      "filterByCircularity": true,
+      "minCircularity": 0.7,
+      "filterByInertia": false,
+      "filterByConvexity": false
+    }
+  }
+}
