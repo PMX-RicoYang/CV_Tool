@@ -1,0 +1,103 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    image: quality-api:latest
+    container_name: quality-api
+    networks: [amr_vb_application]
+    # environment:
+    #   - MONGO_URI=mongodb://rootAMR:AMR28006928@amr-mongodb-1:27017/?authSource=admin
+    #   - MONGO_DB=shop
+    #   - MONGO_COL=quality
+    #   - PORT=5001
+    #   - TZ=Asia/Taipei
+    ports:
+      - "5001:5001"
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:5001/healthz', r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 25s
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    container_name: quality-grafana
+    networks:
+      - amr_vb_application
+    ports:
+      - "3001:3000"
+    environment:
+      # 開啟 Grafana 自身的 Gzip (雙重保險，通常由 Nginx 處理即可，但開著無妨)
+      - GF_SERVER_ENABLE_GZIP=true
+      # 優化靜態資源快取
+      - GF_SERVER_STATIC_ROOT_PATH=/usr/share/grafana/public
+
+      - GF_PANELS_DISABLE_SANITIZE_HTML=true
+      # - GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource,marcusolsson-dynamictext-panel,volkovlabs-form-panel,volkovlabs-variable-panel,marcusolsson-calendar-panel
+      - GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource,marcusolsson-dynamictext-panel
+      - TZ=Asia/Taipei
+      
+      # - GF_SERVER_PROTOCOL=https
+      # - GF_SERVER_CERT_FILE=/etc/grafana/server.crt
+      # - GF_SERVER_CERT_KEY=/etc/grafana/server.key
+      
+      - GF_BRANDING_LOGIN_TITLE="Whelcome"
+      - GF_AUTH_ANONYMOUS_HIDE_VERSION=true
+      - GF_USERS_DEFAULT_THEME=light
+      - GF_SECURITY_ALLOW_EMBEDDING=true        # 務必開啟允許嵌入
+      - GF_AUTH_ANONYMOUS_ENABLED=true          # 務必開啟匿名存取
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer       # 設定權限
+      
+      # 🔥 必須加入：設定 Grafana 的外部存取路徑
+      - GF_SERVER_PROTOCOL=http
+      - GF_SERVER_ROOT_URL=https://54.158.237.206/grafana
+      - GF_SERVER_BEHIND_PROXY=true
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+      - GF_SERVER_DOMAIN=54.158.237.206
+  
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./logo2.svg:/usr/share/grafana/public/img/grafana_icon.svg
+      - ./logo2.png:/usr/share/grafana/public/img/fav32.png
+      - ./certs/server.crt:/etc/grafana/server.crt
+      - ./certs/server.key:/etc/grafana/server.key
+      - /home/ubuntu/Ramen/grafana.ini:/etc/grafana/grafana.ini
+      #- /home/ubuntu/Ramen/custom-assets:/var/lib/grafana/custom_assets
+     # - ./custom-assets/login_cleanup.js:/usr/share/grafana/public/js/login_cleanup.js
+    restart: unless-stopped
+    depends_on:
+      - api
+  web:
+    image: nginx:alpine
+    networks:
+      - amr_vb_application
+    container_name: quality-web
+    ports:
+      - "80:80"    # 可選，用來 redirect → 443
+      - "443:443"  # 對外的 HTTPS
+    volumes:
+      - ./logo2.png:/usr/share/nginx/html/logo2.png:ro
+      # index.html（你原本的那個）
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+
+      # SSL 憑證（跟 grafana 共用同一組）
+      - ./certs/server.crt:/etc/nginx/certs/server.crt:ro
+      - ./certs/server.key:/etc/nginx/certs/server.key:ro
+
+      # nginx 設定
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+
+    depends_on:
+      - grafana
+
+
+
+networks:
+  amr_vb_application:
+    external: true  # 使用既有的外部網路
+
+volumes:
+  grafana-data:
